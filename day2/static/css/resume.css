@@ -11,8 +11,25 @@
 
   .flex-item {
     border: 1px solid #626262;
-    margin: 3px;
-    /* padding: 10px 0 0 10px; */
+    max-width: 600px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .flex-logo {
+    border: 1px solid #626262;
+    max-width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-right {
+    border: 1px solid #626262;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .info-container{
@@ -22,6 +39,13 @@
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
+      margin: auto;
+  }
+
+  .name-center p{
+      padding: 0;
+      margin: 0 0 10px;
+      text-align: center;
   }
 
   .info-container p{
