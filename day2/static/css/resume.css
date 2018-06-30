@@ -53,6 +53,11 @@
       margin: 0 0 10px;
   }
 
+  .imgtag {
+    width: 60px; /* you can use % */
+    height: auto;
+  }
+
   img {
       width: 100px; /* you can use % */
       height: auto;
