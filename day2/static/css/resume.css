@@ -1,5 +1,5 @@
   .flex-container-row {
-     border: 1px solid #626262;
+     /* border: 1px solid #626262; */
      display: -webkit-flex;
      display: flex;
      -webkit-flex-direction: row;
@@ -9,8 +9,16 @@
      flex-wrap: wrap;
   }
 
-  .flex-item {
+  .info-block {
     border: 1px solid #626262;
+    margin-top: 5%;
+  }
+
+  .info-block-title {
+    margin-left: 2%;
+  }
+
+  .flex-item {
     max-width: 600px;
     height: auto;
     margin-left: 5px;
@@ -23,10 +31,11 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 4px;
   }
 
   .flex-right {
-    border: 1px solid #626262;
     width: 80%;
     margin-right: auto;
     margin-left: auto;
