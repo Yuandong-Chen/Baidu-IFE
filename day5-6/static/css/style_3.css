@@ -15,7 +15,7 @@
 
 .info-header-content{
   display: inline-block;
-  margin-left: 65px;
+  margin-left: 20px;
   margin-top: auto;
   margin-bottom: auto;
   color: white;
@@ -35,8 +35,8 @@
 
 .info-block-header{
   float:left;
-  width: 30%;
-  height: 180px;
+  width: 25%;
+  height: 200px;
   background-color: lightgray;
   text-align: center;
 }
@@ -45,10 +45,13 @@
   margin-left: 20px;
   display: inline-block;
   width: 65%;
-  height: 180px;
+  height: 200px;
+  padding-top: 10px;
 }
 
-
+.info-block-row p{
+  display: inline;
+}
 * {
   box-sizing: border-box;
   font-family: sans-serif;
