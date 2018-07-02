@@ -1,0 +1,12 @@
+  .info-block span {
+    display: inline-block;
+    margin-right: 10%;
+  }
+
+  .info-block-row .info-title{
+    font-weight: bold;
+  }
+
+  * {
+    font-family: sans-serif;
+  }

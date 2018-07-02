@@ -1,0 +1,33 @@
+  .info-block span {
+    display: inline-block;
+    margin-right: 10%;
+  }
+
+  .info-block-row .info-title{
+    font-weight: bold;
+  }
+
+  .info-header{
+    width: 30%;
+    float:left;
+    height: 900px;
+    background: rgb(98,157,253);
+  }
+
+  .info-header-content{
+    margin-top: 55px;
+    text-align: center;
+    color: white;
+  }
+
+  .info-content{
+    margin-left: 15px;
+    width: 65%;
+    float:left;
+    height: 900px;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
