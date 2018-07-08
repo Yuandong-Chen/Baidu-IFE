@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .nav {
+        position: relative;
+        background-color: rgb(51,51,51);
+        z-index: 3;
+      }
+      .nav, .navigator a{
+        color: white;
+      }
+
+      .logo {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+      }
+      .navigator {
+        width: 60%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+      }
+
+      .navigator nav {
+        margin-top: 10px;
+      }
+
+      .banner {
+        position: relative;
+        background-color: rgb(54,198,48);
+        height: 350px
+      }
+      .digit-nav {
+        position: absolute;
+        bottom: 7px;
+        right: 0;
+        width: 150px;
+        margin-right: 80px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+      }
+
+      .digit {
+        display: inline-block;
+        width: 30px;
+        height: 33px;
+        border: 1px solid black;
+        padding-left: 8px;
+        background-color: rgba(255,255,255,0.5);
+      }
+
+      .digit span {
+        position: absolute;
+        bottom: 5px;
+      }
+
+      .digit:active, .digit:hover {
+        background-color: rgba(255,255,255,0.8);
+      }
+
+      .active {
+        background-color: rgba(255,255,255,0.8);
+        height: 50px;
+      }
+
+      #navcontainer
+      {
+        margin-left: 80px;
+        overflow: hidden;
+      }
+
+      #navlist li
+      {
+          list-style: none;
+          margin: 0;
+          float: left;
+      }
+
+      #navlist li a
+      {
+          display: inline-block;
+          text-align: center;
+          margin-left: 0;
+          border: 2px solid lightgrey;
+          width: 120px;
+          height: 50px;
+          background: rgb(238,238,238);
+          text-decoration: none;
+          color: black;
+          border-radius: 20px 20px 0 0;
+          padding-top: 20px;
+      }
+
+      #navlist li a#current
+      {
+          background: white;
+          border-bottom: 2px solid white;
+          z-index: 2;
+      }
+
+      #middle-body {
+        border-top: 2px solid lightgrey;
+        z-index: 1;
+        margin-top: -2px;
+        display: flex;
+        margin-bottom: 20px;
+      }
+      #blankleft{
+        flex: 0 0 120px;
+      }
+      #blankright {
+        flex: 0 0 120px;
+      }
+
+      #content {
+        flex:100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .column-1-3 {
+        margin-top: 10px;
+        border: 2px solid lightgrey;
+        flex: 0 32.5%;
+        height: 200px;
+        padding-top: 80px;
+      }
+
+      .column-1-4 {
+        padding-top: 80px;
+        margin-top: 10px;
+        border: 2px solid lightgrey;
+        flex: 0 24%;
+        height: 200px;
+      }
+      .footer {
+        padding-top: 20px;
+        color: white;
+        background-color: rgb(102,102,102);
+        height: 100px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-weight: 120;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <h2>Logo</h2>
+      </div><div class="navigator">
+        <nav>
+          <a href="#">Github</a>
+          <a href="#">Register</a>
+          <a href="#">Login</a>
+        </nav>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="digit-nav">
+        <div class="digit">
+          <span>1</span>
+        </div><div class="digit active">
+          <span>2</span>
+        </div><div class="digit">
+          <span>3</span>
+        </div><div class="digit">
+          <span>4</span>
+        </div>
+      </div>
+    </div>
+    <div id="navcontainer">
+      <ul id="navlist">
+          <li id="active"><a href="#" id="current">HOME</a></li>
+          <li><a href="#">PROFILE</a></li>
+          <li><a href="#">ABOUT</a></li>
+      </ul>
+    </div>
+    <div id="middle-body">
+      <div id="blankleft">
+      </div>
+      <div id="content">
+        <div class="column-1-3">This is Content 1</div>
+        <div class="column-1-3">Maybe Content 2</div>
+        <div class="column-1-3">Content 3</div>
+        <div class="column-1-4">Content 4</div>
+        <div class="column-1-4">Content 5</div>
+        <div class="column-1-4">Content 6</div>
+        <div class="column-1-4">Content 7</div>
+        <div class="column-1-3">Content 8</div>
+        <div class="column-1-3">Content 9</div>
+        <div class="column-1-3">Content 10</div>
+      </div>
+      <div id="blankright">
+      </div>
+    </div>
+    <div class="footer">
+      © 2018 ife.baidu.com
+    </div>
+  </body>
+</html>
