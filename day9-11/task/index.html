@@ -3,8 +3,223 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style media="screen">
+      #header {
+        border: 1px solid transparent;
+        background: radial-gradient(transparent, black), url("img/bg1.png") center;
+        background-attachment: fixed;
+        background-color: cover;
+      }
+
+      #header-title {
+        color: white;
+        margin-top: 200px;
+        text-align: center;
+        height: 50px;
+        font-size: 50px;
+      }
+
+      #header-text {
+        color: lightgrey;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 70%;
+      }
+
+      #create-account-form {
+        color: white;
+        text-align: center;
+        border: 1px solid grey;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 100px;
+      }
+
+      #create-account-form input {
+        text-align: center;
+        color: grey;
+        background: transparent;
+        width: 200px;
+        height: 40px;
+        margin-bottom: 40px;
+        border-radius: 5px;
+        border: 1px solid grey;
+      }
+
+      #create-account-title {
+        margin-top: 40px;
+      }
+
+      #create-account-text {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: grey;
+        font-size: 12px;
+      }
+
+      #create-account-form button {
+        border-radius: 5px;
+        margin-bottom: 40px;
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        border-style: solid;
+        box-shadow: none;
+      }
+
+      #feature-1 {
+        margin-top: 40px;
+        background-color: white;
+        text-align: center;
+      }
+
+      #feature-1-subtitle {
+        margin-top: 15px;
+      }
+
+      #feature-1-title {
+        width: 60%;
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+      }
+
+      .container {
+        margin-top: 15px;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .column-2-1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        flex: 1 0 300px;
+        text-align: center;
+      }
+
+      .column5-2 {
+        margin-top: 15px;
+        flex: 0 0 250px;
+      }
+
+      .column5-1 {
+        margin-top: 10px;
+        flex: 0 0 100px;
+      }
+
+      .column-2-1 img {
+        float: left;
+        margin-left: 50px;
+      }
+
+      .description {
+        float: right;
+        width: calc(100% - 120px);
+        text-align: left;
+      }
+
+      .description h4 {
+        margin-top: 0;
+        font-weight: 400;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      * {
+        font-family: sans-serif;
+        font-weight: 60;
+        box-sizing: border-box;
+        letter-spacing: 1.5px;
+      }
+    </style>
   </head>
   <body>
-    asfd
+    <div id="header">
+
+      <div id="header-title">
+        Hello World
+      </div>
+
+      <div id="header-text">
+        China is speeding up strategic plan, standards, traffic rules, laws and regulations on accident-incurred liabilities for its smart car industry. Economic information Daily reported Tursday.
+      </div>
+
+      <form id= "create-account-form" class="" action="index.html" method="post">
+        <div id="create-account-title">
+          <span>CREATE YOUR ACCOUNT</span>
+        </div>
+        <div id="create-account-text">
+          <span>IT IS ABSOLUTELY FREE</span>
+        </div>
+        <div class="column">
+          <div class="column5-2">
+            <input type="email" name="email" value="Enter your email">
+          </div>
+          <div class="column5-2">
+            <input type="text" name="" value="Create your password">
+          </div>
+          <div class="column5-1">
+            <button type="button" name="button">SIGN UP</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+    <div id="feature-1">
+      <div id="feature-1-subtitle">
+        SOATLOADS OF AWESOME
+      </div>
+      <div id="feature-1-title">
+        Ready-made, customizable, HTML landing page sections
+      </div>
+      <div class="container">
+        <div class="column">
+          <div class= "column-2-1">
+            <img src="img/cellphone.png" alt="">
+            <div class="description">
+              <h4>Mobile First</h4>
+              <p>All modulz are built mobile first maximum device compatibility.</p>
+            </div>
+          </div>
+          <div class= "column-2-1">
+            <img src="img/check.png" alt="">
+            <div class="description">
+              <h4>Accessibility</h4>
+              <p>Support for IE8 mobile and tablet devices screenreaders and color blind.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class= "column-2-1">
+            <img src="img/pencil.png" alt="">
+            <div class="description">
+              <h4>Fluid Typography</h4>
+              <p>On different screen sizes, fonts automagically scale with the viewport</p>
+            </div>
+          </div>
+          <div class= "column-2-1">
+            <img src="img/setting.png" alt="">
+            <div class="description">
+              <h4>Customization</h4>
+              <p>Make any design your own using the Style Editor. Personlize fonts, colors and layouts to create the custom look you want.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
