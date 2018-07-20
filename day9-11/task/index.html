@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <style media="screen">
       #header {
         border: 1px solid transparent;
@@ -123,6 +124,18 @@
         margin-left: 50px;
       }
 
+      .column3-1-padding {
+        flex: 1 0;
+      }
+
+      .column3-1 {
+        margin-top: 80px;
+        flex: 3 0 30%;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
       .description {
         float: right;
         width: calc(100% - 120px);
@@ -168,14 +181,17 @@
       }
 
       #feature-2-pad {
-        flex: 1 0 450px;
+        flex: 1 0 400px;
         padding-top: 50px;
         padding-bottom: 50px;
         padding-left: 50px;
+        border: 1px solid red;
+        width: 100%;
       }
 
       #feature-2-pad img {
         width: 100%;
+        height: 450px;
         float:right;
       }
 
@@ -194,22 +210,75 @@
         border: 1px solid grey;
         color: white;
         text-align: center;
-        margin-right: -20px;
+        margin-right: 0px;
       }
 
       #fit-img {
         position: relative;
-        left: 9.6%;
-        top: 5.4%;
-        height: 89.6%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        height: 413px;
+        top: 18px;
+        left: 9.5%;
+        width: 90%;
+      }
+
+      #fit-img img {
+        height: 413px;
+        margin-right: 0;
       }
 
       #ipad_img {
         position: absolute;
-        height: 100%;
-        margin: 0 0 0;
+        top: 0;
+        left: 0;
         z-index: 1;
       }
+
+      #feature-3 {
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 50px;
+        box-shadow: 0 4px 2px -2px gray;
+      }
+
+      #feature-3-title {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .feature-3-title {
+        margin-bottom: 40px;
+        font-family: 'Satisfy', cursive;
+      }
+
+      .feature-3-text {
+        margin-top: 40px;
+      }
+
+      #feature-4 {
+        margin-top: 180px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 50px;
+        box-shadow: 0 4px 2px -2px gray;
+      }
+
+      .column3-1 > img {
+        max-width: 450px;
+      }
+
+      .feature-4-title {
+        margin-top: 50px;
+        font-weight: 500
+      }
+
+      .feature-4-text {
+        padding-top: 50px;
+        text-align: left;
+      }
+
       body {
         margin: 0;
       }
@@ -323,9 +392,64 @@
         <h2>Try Our Awesome Products</h2>
       </div>
       <div class="column">
-        
+        <div class="column3-1">
+          <div class="feature-3-title">
+            Singleton
+          </div>
+          <div class="feature-3-texts">
+            Li Jun, a China Academy of Engineering academician and also director of the alliance's experts' commitee said that China will also launch design guidance for smart cars, smart map architecture and standards for test grounds.
+          </div>
+        </div>
+        <div class="column3-1">
+          <div class="feature-3-title">
+            HERO
+          </div>
+          <div class="feature-3-texts">
+            Li said the smart car industry is able to enlarge te current car industry by 1 trillion yuan ($158.15 billion) and also able to boost fast devleopment in 5G, internet of cars, big data, artifitial intelligence and new-energy vehicles.
+          </div>
+        </div>
+        <div class="column3-1">
+          <div class="feature-3-title">
+            Portland
+          </div>
+          <div class="feature-3-texts">
+            Zhang Junyi, a partner with NIO Capital, said that the smart car is the trend for the car industry and China's auto sector will usher in a new key develpment stage with the improvement of infrastructure, technology, policies and laws.
+          </div>
+        </div>
       </div>
     </div>
 
+    <div id="feature-4">
+      <div class="column">
+        <div class="column3-1">
+          <img src="img/b2.png" alt="">
+        </div>
+        <div class="column3-1">
+          <div class="feature-4-title">
+            Learn How to Improve Your Personal Business
+          </div>
+          <div class="feature-4-text">
+            Li Jun, a China Academy of Engineering academician and also director of the alliance's experts' commitee said that China will also launch design guidance for smart cars, smart map architecture and standards for test grounds.
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="column3-1">
+          <div class="feature-4-title">
+            Choose Between Two Beautifully Designed Color Schemes.
+          </div>
+          <div class="feature-4-text">
+            China will come up with its own smart car standards, traffic rules, laws and regulations relating to safety, according to the China Industry Innovation Alliance for the Intelligent and Connected Vehicles.
+          </div>
+        </div>
+        <div class="column3-1">
+          <img src="img/b1.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="feature-5">
+      todo
+    </div>
   </body>
 </html>
