@@ -134,6 +134,81 @@
         font-weight: 400;
       }
 
+      #feature-2 {
+        background: radial-gradient(transparent, black), url("img/bg2.png") center;
+        background-attachment: fixed;
+        background-color: cover;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #feature-2-description {
+        flex: 1 0 300px;
+      }
+
+      #feature-2-title {
+        font-size: 30px;
+        padding-left: 15px;
+        text-align: left;
+      }
+
+      #feature-2-text {
+        padding-left: 15px;
+        text-align: left;
+        color: lightgrey;
+      }
+
+      #feature-2-btn {
+        margin-top: 40px;
+        padding-left: 15px;
+        height: 100px;
+        overflow: auto;
+      }
+
+      #feature-2-pad {
+        flex: 1 0 400px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+      }
+
+      #feature-2-pad img {
+        width: 100%;
+        float:right;
+      }
+
+      #feature-2-btn-1 {
+        float: left;
+        height: 40px;
+        background: white;
+        margin-right: 20px;
+        margin-bottom: 10px;
+      }
+
+      #feature-2-btn-2 {
+        float: left;
+        height: 40px;
+        background: transparent;
+        border: 1px solid grey;
+        color: white;
+        text-align: center;
+
+      }
+
+      #fit-img {
+        position: relative;
+        left: 9.6%;
+        top: 5.4%;
+        height: 89.6%;
+      }
+
+      #ipad_img {
+        position: absolute;
+        height: 100%;
+        margin: 0 0 0;
+        z-index: 1;
+      }
       body {
         margin: 0;
       }
@@ -147,8 +222,8 @@
     </style>
   </head>
   <body>
-    <div id="header">
 
+    <div id="header">
       <div id="header-title">
         Hello World
       </div>
@@ -176,7 +251,6 @@
           </div>
         </div>
       </form>
-
     </div>
 
     <div id="feature-1">
@@ -221,5 +295,28 @@
         </div>
       </div>
     </div>
+
+    <div id="feature-2">
+      <div id="feature-2-description">
+        <div id="feature-2-title">
+          <h4>Supportive policies for China's smart car</h4>
+        </div>
+        <div id="feature-2-text">
+          <p>china will come up with its own smart car standards, traffic rules, laws and regulations relating to safety, according to the China Industry Innovation Alliance for the Intelligent and Connected Vehicles.</p>
+        </div>
+        <div id="feature-2-btn">
+          <button id="feature-2-btn-1" type="button" name="button">CHECK OUT FEATURES</button>
+          <button id="feature-2-btn-2" type="button" name="button">TRY PRODUCT FOR FREE</button>
+        </div>
+      </div>
+      <div id="feature-2-pad">
+        <img src="img/ipad.png" alt="">
+        <div id="fit-img">
+          <img id="ipad_img" src="img/ipad_img.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    
   </body>
 </html>
