@@ -1,0 +1,314 @@
+#panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+#menu {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#menu-left {
+  position: relative;
+  flex: 1;
+  background: rgb(28, 36, 50);
+  padding-top: 20px;
+}
+
+#menu-left-icon {
+  margin-bottom: 40px;
+}
+
+#menu-left-icon > .img-icon-overlapped {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.img-icon-overlapped {
+  display: block;
+  position: relative;
+}
+
+.overlapped{
+  position: absolute;
+  left: 40px;
+  top: 36%;
+}
+
+#menu-left-setting {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#menu-left-setting > img{
+  float: left;
+  padding-left: 5px;
+  padding-right: 8px;
+}
+
+#menu-right {
+  flex: 4;
+  position: relative;
+  background: rgb(32,41,59);
+  padding-top: 20px;
+}
+
+.menu-right-column {
+  height: 240px;
+  color: grey;
+  font-size: 12px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu-right-column > img{
+  float: right;
+}
+
+.menu-right-column-last{
+  margin-bottom: 100%;
+}
+
+.delim {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  border-bottom: 1px solid rgba(220,220,220,0.2);
+}
+
+.menu-list {
+  margin-top: 25px;
+  color: lightgray;
+}
+
+.menu-list-item {
+  margin-top: 15px;
+}
+
+.menu-list-item-news {
+  float: right;
+  display: inline-block;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  padding-top: 4px;
+  height: 20px;
+  margin-top: -4px;
+  padding-left: 1px;
+}
+
+.menu-list-item-img {
+  display: inline-block;
+  float: left;
+  padding-right: 13px;
+}
+
+.menu-list-item-focus {
+  color: white;
+}
+
+.news-red {
+  background: red;
+  width: 20px;
+  font-weight: 800;
+}
+
+.news-blue {
+  background: rgb(0,123,204);
+  width: 30px;
+}
+
+.menu-right-footer {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  font-size: 12px;
+  color: white;
+}
+
+.menu-monthly-goal-bar {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#bar1 {
+  margin-top: 15px;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+}
+
+#bar2 {
+  margin-top: 15px;
+  position: absolute;
+  width: 18%;
+  height: 3px;
+}
+
+.select-active {
+  border-left: 1.5px solid blue;
+}
+
+#message {
+  flex: 5;
+  position: relative;
+}
+
+#message-header {
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  width: 100%;
+  overflow: hidden;
+  height: 70px;
+}
+
+#message-header-title {
+  float: left;
+  padding-left: 5%;
+}
+
+#message-header-admin {
+  float:right;
+  padding-right: 5%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#message-header-admin-avatar {
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#green-circle {
+  position: absolute;
+  left: 33px;
+  top: 33px;
+}
+
+#message-header-admin-info {
+  padding-top: 10px
+}
+
+#message-header-admin-panel {
+  padding-top: 20px
+}
+
+#message-inner-frame {
+  border: 1px solid red;
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.message-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.message-mini-header {
+  flex: 0 0 50px;
+  border: 1px solid red;
+}
+
+.message-mini-header input[type=text] {
+  font-size: 15px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: inline-block;
+  height: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  padding-left: 10px;
+}
+
+.search-bar {
+  position: relative;
+  margin-top: 10px;
+}
+
+.fa-search {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+}
+
+.message-left-column {
+  flex: 2;
+  border: 1px solid red;
+}
+
+#message-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#message-right-old {
+  flex: 5;
+  border: 1px solid red;
+}
+
+#message-right-tuesday {
+  flex: 6;
+  border: 1px solid red;
+}
+
+#message-right-news {
+  flex: 2;
+  border: 1px solid red;
+}
+
+#message-right-input {
+  flex: 1;
+  border: 1px solid red;
+}
+
+
+
+
+
+
+body {
+  /* border: 1px solid pink; */
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+* {
+  font-family: sans-serif;
+  font-weight: 60;
+  box-sizing: border-box;
+  letter-spacing: 1.5px;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
