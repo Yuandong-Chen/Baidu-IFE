@@ -29,10 +29,22 @@
         margin-bottom: 40px;
       }
 
-      #menu-left-icon > img {
+      #menu-left-icon > .img-icon-overlapped {
         padding-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 10px;
+      }
+
+      .img-icon-overlapped {
+        display: block;
+        position: relative;
+      }
+
+      .overlapped{
+        position: absolute;
+        left: 40px;
+        top: 36%;
       }
 
       #menu-left-setting {
@@ -178,10 +190,22 @@
       <div id="menu">
         <div id="menu-left">
           <div id="menu-left-icon">
-            <img src="img/blue_round.png" alt="">
-            <img src="img/purple_round.png" alt="">
-            <img src="img/red_round.png" alt="">
-            <img src="img/circle.png" alt="">
+            <div class="img-icon-overlapped">
+              <img src="img/blue_round.png" alt="">
+              <img class="overlapped" src="img/plane_icon.png" alt="">
+            </div>
+            <div class="img-icon-overlapped">
+              <img src="img/purple_round.png" alt="">
+              <img class="overlapped" src="img/rocket_icon.png" alt="">
+            </div>
+            <div class="img-icon-overlapped">
+              <img src="img/red_round.png" alt="">
+              <img class="overlapped" src="img/handler_icon.png" alt="">
+            </div>
+            <div class="img-icon-overlapped">
+              <img src="img/circle.png" alt="">
+              <img class="overlapped" src="img/cross.png" alt="">
+            </div>
           </div>
           <div id="menu-left-setting">
             <img src="img/grid_icon.png" alt="">
