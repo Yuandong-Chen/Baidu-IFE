@@ -161,7 +161,7 @@
 }
 
 .select-active {
-  border-left: 1.5px solid blue;
+  border-left: 1.5px solid DeepSkyBlue;
 }
 
 #message {
@@ -212,7 +212,6 @@
 }
 
 #message-inner-frame {
-  border: 1px solid red;
   height: calc(100% - 70px);
   display: flex;
   flex-direction: row;
@@ -229,7 +228,8 @@
 
 .message-mini-header {
   flex: 0 0 50px;
-  border: 1px solid red;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 
 .message-mini-header input[type=text] {
@@ -257,7 +257,43 @@
 
 .message-left-column {
   flex: 2;
-  border: 1px solid red;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 13px;
+  color: dimgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.message-list-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.message-list-person-info {
+  display: flex;
+}
+
+.message-person-img {
+  padding-top: 10px;
+}
+
+.message-person-text {
+  padding-left: 20px;
+  font-weight: 300;
+  line-height: 10px;
+}
+
+.message-person-text h4{
+  font-weight: 400;
+  padding-bottom: 0;
+  color: black;
+}
+
+.message-list-lasttime {
+  padding-top: 13px;
+  color: gray;
 }
 
 #message-right {
